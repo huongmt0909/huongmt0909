@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 64" width="100%" height="64">
+  <defs>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#f59e0b"/>
+      <stop offset="50%"  stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="tglow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="64" fill="#0d1117"/>
+
+  <!-- Underline -->
+  <rect x="0" y="60" height="2" fill="url(#tg)" rx="1">
+    <animate attributeName="width" from="0" to="800" dur="1.5s" fill="freeze" begin="0.2s"/>
+  </rect>
+  <circle cy="61" r="3" fill="#fbbf24" filter="url(#tglow)">
+    <animate attributeName="cx" from="0" to="800" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stars orbiting -->
+  <text font-size="16" text-anchor="middle">
+    <animateMotion path="M 28 32 m -12 0 a 12 12 0 1 1 24 0 a 12 12 0 1 1 -24 0" dur="4s" repeatCount="indefinite"/>
+    ⭐
+  </text>
+
+  <!-- Trophy icon static -->
+  <text x="28" y="40" font-size="22" text-anchor="middle">🏆</text>
+
+  <!-- Title -->
+  <text x="62" y="39" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#f8fafc">
+    Trophy
+    <animate attributeName="opacity" values="0;1" dur="0.6s" fill="freeze" begin="0.1s"/>
+  </text>
+
+  <!-- Animated gold stars right side -->
+  <text x="700" y="38" font-size="14" opacity="0">⭐
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <text x="724" y="38" font-size="14" opacity="0">✨
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="-0.7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="2s" begin="-0.7s" repeatCount="indefinite"/>
+  </text>
+  <text x="748" y="38" font-size="14" opacity="0">⭐
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="-1.4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="2s" begin="-1.4s" repeatCount="indefinite"/>
+  </text>
+</svg>

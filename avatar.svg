@@ -63,19 +63,19 @@
     <animateTransform attributeName="transform" type="rotate" from="120 200 200" to="480 200 200" dur="7s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Text HM -->
+  <!-- Text HMT -->
   <text
-    x="200" y="240"
+    x="200" y="236"
     text-anchor="middle"
     font-family="system-ui, -apple-system, sans-serif"
-    font-size="128"
+    font-size="96"
     font-weight="900"
-    letter-spacing="-6"
+    letter-spacing="-4"
     fill="url(#textGrad)"
     filter="url(#textGlow)"
   >
-    HM
-    <animate attributeName="y" values="240;232;240" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    HMT
+    <animate attributeName="y" values="236;228;236" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
   </text>
 
   <!-- Inner glow overlay -->

@@ -45,7 +45,7 @@ const huongMT = {
 
 <img src="divider.svg" width="100%"/>
 
-## 📊 GitHub Stats
+<img src="banners/stats.svg" width="100%"/>
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=huongmt0909&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=6366f1&icon_color=8b5cf6&text_color=94a3b8" />
@@ -58,7 +58,7 @@ const huongMT = {
 
 <img src="divider.svg" width="100%"/>
 
-## 🏆 Trophy
+<img src="banners/trophy.svg" width="100%"/>
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=huongmt0909&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" />
@@ -66,13 +66,13 @@ const huongMT = {
 
 <img src="divider.svg" width="100%"/>
 
-## 🐍 Contribution Snake
+<img src="banners/snake.svg" width="100%"/>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/huongmt0909/huongmt0909/output/snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/huongmt0909/huongmt0909/output/snake.svg" />
-    <img src="https://raw.githubusercontent.com/huongmt0909/huongmt0909/output/snake.svg" alt="contribution snake" />
+    <img alt="contribution snake" src="https://raw.githubusercontent.com/huongmt0909/huongmt0909/output/snake.svg" onerror="this.style.display='none'" />
   </picture>
 </div>
 
