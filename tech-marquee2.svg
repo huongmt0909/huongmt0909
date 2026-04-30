@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="100%" height="80">
+  <defs>
+    <linearGradient id="fadeL2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="15%"  stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeR2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="85%"  stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+    <style>
+      .badge2 { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="800" height="80" fill="#0d1117"/>
+
+  <!-- Track 2 — scroll RIGHT (reverse) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="-900,0" to="0,0" dur="20s" repeatCount="indefinite"/>
+
+    <!-- MySQL -->
+    <rect x="10"  y="22" width="75" height="28" rx="6" fill="#0d2a4a"/>
+    <text class="badge2" x="47"  y="41" fill="#4479A1" text-anchor="middle">🐬 MySQL</text>
+
+    <!-- MongoDB -->
+    <rect x="100" y="22" width="90" height="28" rx="6" fill="#0d2a1a"/>
+    <text class="badge2" x="145" y="41" fill="#47A248" text-anchor="middle">🍃 MongoDB</text>
+
+    <!-- VS Code -->
+    <rect x="205" y="22" width="80" height="28" rx="6" fill="#001a40"/>
+    <text class="badge2" x="245" y="41" fill="#007ACC" text-anchor="middle">⌨ VS Code</text>
+
+    <!-- Cursor -->
+    <rect x="300" y="22" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    <text class="badge2" x="337" y="41" fill="#ffffff" text-anchor="middle">▌Cursor</text>
+
+    <!-- Android Studio -->
+    <rect x="390" y="22" width="120" height="28" rx="6" fill="#0d2a1a"/>
+    <text class="badge2" x="450" y="41" fill="#3DDC84" text-anchor="middle">🤖 Android Studio</text>
+
+    <!-- Django -->
+    <rect x="525" y="22" width="75" height="28" rx="6" fill="#051a0d"/>
+    <text class="badge2" x="562" y="41" fill="#2BA65A" text-anchor="middle">🎸 Django</text>
+
+    <!-- Rails -->
+    <rect x="615" y="22" width="100" height="28" rx="6" fill="#2a0505"/>
+    <text class="badge2" x="665" y="41" fill="#CC0000" text-anchor="middle">💎 Rails</text>
+
+    <!-- Claude AI -->
+    <rect x="730" y="22" width="90" height="28" rx="6" fill="#2a1a05"/>
+    <text class="badge2" x="775" y="41" fill="#D97706" text-anchor="middle">✦ Claude AI</text>
+
+    <!-- ChatGPT -->
+    <rect x="835" y="22" width="85" height="28" rx="6" fill="#051a15"/>
+    <text class="badge2" x="877" y="41" fill="#10A37F" text-anchor="middle">● ChatGPT</text>
+
+    <!-- duplicate -->
+    <rect x="935"  y="22" width="75" height="28" rx="6" fill="#0d2a4a"/>
+    <text class="badge2" x="972"  y="41" fill="#4479A1" text-anchor="middle">🐬 MySQL</text>
+
+    <rect x="1025" y="22" width="90" height="28" rx="6" fill="#0d2a1a"/>
+    <text class="badge2" x="1070" y="41" fill="#47A248" text-anchor="middle">🍃 MongoDB</text>
+
+    <rect x="1130" y="22" width="80" height="28" rx="6" fill="#001a40"/>
+    <text class="badge2" x="1170" y="41" fill="#007ACC" text-anchor="middle">⌨ VS Code</text>
+
+    <rect x="1225" y="22" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    <text class="badge2" x="1262" y="41" fill="#ffffff" text-anchor="middle">▌Cursor</text>
+
+    <rect x="1315" y="22" width="120" height="28" rx="6" fill="#0d2a1a"/>
+    <text class="badge2" x="1375" y="41" fill="#3DDC84" text-anchor="middle">🤖 Android Studio</text>
+
+    <rect x="1450" y="22" width="75" height="28" rx="6" fill="#051a0d"/>
+    <text class="badge2" x="1487" y="41" fill="#2BA65A" text-anchor="middle">🎸 Django</text>
+
+    <rect x="1540" y="22" width="100" height="28" rx="6" fill="#2a0505"/>
+    <text class="badge2" x="1590" y="41" fill="#CC0000" text-anchor="middle">💎 Rails</text>
+
+    <rect x="1655" y="22" width="90" height="28" rx="6" fill="#2a1a05"/>
+    <text class="badge2" x="1700" y="41" fill="#D97706" text-anchor="middle">✦ Claude AI</text>
+
+    <rect x="1760" y="22" width="85" height="28" rx="6" fill="#051a15"/>
+    <text class="badge2" x="1802" y="41" fill="#10A37F" text-anchor="middle">● ChatGPT</text>
+  </g>
+
+  <!-- Fade overlays -->
+  <rect width="120" height="80" fill="url(#fadeL2)"/>
+  <rect x="680" width="120" height="80" fill="url(#fadeR2)"/>
+</svg>

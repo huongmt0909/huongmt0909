@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="100%" height="80">
+  <defs>
+    <linearGradient id="fadeL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="15%"  stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="85%"  stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+    <style>
+      .badge { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="800" height="80" fill="#0d1117"/>
+
+  <!-- Track 1 — scroll left -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0,0" to="-900,0" dur="18s" repeatCount="indefinite"/>
+
+    <!-- ReactJS -->
+    <rect x="10"  y="22" width="90" height="28" rx="6" fill="#20232A"/>
+    <text class="badge" x="55"  y="41" fill="#61DAFB" text-anchor="middle">⚛ ReactJS</text>
+
+    <!-- Flutter -->
+    <rect x="115" y="22" width="80" height="28" rx="6" fill="#02569B"/>
+    <text class="badge" x="155" y="41" fill="#ffffff" text-anchor="middle">🐦 Flutter</text>
+
+    <!-- TypeScript -->
+    <rect x="210" y="22" width="100" height="28" rx="6" fill="#007ACC"/>
+    <text class="badge" x="260" y="41" fill="#ffffff" text-anchor="middle">TS TypeScript</text>
+
+    <!-- Next.js -->
+    <rect x="325" y="22" width="80" height="28" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    <text class="badge" x="365" y="41" fill="#ffffff" text-anchor="middle">▲ Next.js</text>
+
+    <!-- Node.js -->
+    <rect x="420" y="22" width="80" height="28" rx="6" fill="#1a3a1a"/>
+    <text class="badge" x="460" y="41" fill="#68a063" text-anchor="middle">⬡ Node.js</text>
+
+    <!-- Kotlin -->
+    <rect x="515" y="22" width="75" height="28" rx="6" fill="#2d1f5a"/>
+    <text class="badge" x="552" y="41" fill="#7F52FF" text-anchor="middle">K Kotlin</text>
+
+    <!-- Swift -->
+    <rect x="605" y="22" width="70" height="28" rx="6" fill="#3d1a0a"/>
+    <text class="badge" x="640" y="41" fill="#FA7343" text-anchor="middle">🦅 Swift</text>
+
+    <!-- Vue.js -->
+    <rect x="690" y="22" width="70" height="28" rx="6" fill="#1a3325"/>
+    <text class="badge" x="725" y="41" fill="#4FC08D" text-anchor="middle">V Vue.js</text>
+
+    <!-- Angular -->
+    <rect x="775" y="22" width="80" height="28" rx="6" fill="#3d0505"/>
+    <text class="badge" x="815" y="41" fill="#DD0031" text-anchor="middle">🅰 Angular</text>
+
+    <!-- duplicate for seamless loop -->
+    <!-- ReactJS -->
+    <rect x="870"  y="22" width="90" height="28" rx="6" fill="#20232A"/>
+    <text class="badge" x="915"  y="41" fill="#61DAFB" text-anchor="middle">⚛ ReactJS</text>
+
+    <rect x="975" y="22" width="80" height="28" rx="6" fill="#02569B"/>
+    <text class="badge" x="1015" y="41" fill="#ffffff" text-anchor="middle">🐦 Flutter</text>
+
+    <rect x="1070" y="22" width="100" height="28" rx="6" fill="#007ACC"/>
+    <text class="badge" x="1120" y="41" fill="#ffffff" text-anchor="middle">TS TypeScript</text>
+
+    <rect x="1185" y="22" width="80" height="28" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    <text class="badge" x="1225" y="41" fill="#ffffff" text-anchor="middle">▲ Next.js</text>
+
+    <rect x="1280" y="22" width="80" height="28" rx="6" fill="#1a3a1a"/>
+    <text class="badge" x="1320" y="41" fill="#68a063" text-anchor="middle">⬡ Node.js</text>
+
+    <rect x="1375" y="22" width="75" height="28" rx="6" fill="#2d1f5a"/>
+    <text class="badge" x="1412" y="41" fill="#7F52FF" text-anchor="middle">K Kotlin</text>
+
+    <rect x="1465" y="22" width="70" height="28" rx="6" fill="#3d1a0a"/>
+    <text class="badge" x="1500" y="41" fill="#FA7343" text-anchor="middle">🦅 Swift</text>
+
+    <rect x="1550" y="22" width="70" height="28" rx="6" fill="#1a3325"/>
+    <text class="badge" x="1585" y="41" fill="#4FC08D" text-anchor="middle">V Vue.js</text>
+
+    <rect x="1635" y="22" width="80" height="28" rx="6" fill="#3d0505"/>
+    <text class="badge" x="1675" y="41" fill="#DD0031" text-anchor="middle">🅰 Angular</text>
+  </g>
+
+  <!-- Fade overlays -->
+  <rect width="120" height="80" fill="url(#fadeL)"/>
+  <rect x="680" width="120" height="80" fill="url(#fadeR)"/>
+</svg>
