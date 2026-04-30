@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="200" height="200">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f8fafc"/>
+      <stop offset="50%"  stop-color="#c7d2fe"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="circle"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="#0f172a"/>
+  <circle cx="200" cy="200" r="200" fill="url(#bgGlow)"/>
+
+  <!-- Border -->
+  <circle cx="200" cy="200" r="198" fill="none" stroke="rgba(99,102,241,0.3)" stroke-width="2"/>
+
+  <!-- Ring 1 - spin -->
+  <g>
+    <circle cx="200" cy="200" r="170" fill="none" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="12s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Ring 2 -->
+  <g>
+    <circle cx="200" cy="200" r="155" fill="none" stroke="rgba(139,92,246,0.12)" stroke-width="1"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="-360 200 200" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Ring 3 -->
+  <g>
+    <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(236,72,153,0.08)" stroke-width="1"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="24s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Orbiting dot 1 - indigo -->
+  <g>
+    <circle cx="200" cy="32" r="5" fill="#818cf8" filter="url(#glow)" opacity="0.9"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Orbiting dot 2 - pink -->
+  <g>
+    <circle cx="200" cy="32" r="4" fill="#ec4899" filter="url(#glow)" opacity="0.85"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="-360 200 200" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Orbiting dot 3 - violet small -->
+  <g>
+    <circle cx="200" cy="48" r="3" fill="#a78bfa" filter="url(#glow)" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" from="120 200 200" to="480 200 200" dur="7s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Text HM -->
+  <text
+    x="200" y="240"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="128"
+    font-weight="900"
+    letter-spacing="-6"
+    fill="url(#textGrad)"
+    filter="url(#textGlow)"
+  >
+    HM
+    <animate attributeName="y" values="240;232;240" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+  </text>
+
+  <!-- Inner glow overlay -->
+  <circle cx="200" cy="200" r="200" fill="none" stroke="rgba(99,102,241,0.1)" stroke-width="40" clip-path="url(#circle)"/>
+</svg>

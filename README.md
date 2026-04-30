@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1&height=200&section=header&text=Hướng%20MT.&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Frontend%20Developer%20·%20React%20%26%20Flutter%20Specialist&descAlignY=58&descSize=18&descColor=c7d2fe" width="100%" />
+<img src="avatar.svg" width="160" height="160" alt="Hướng MT." />
+
+<h1>Hi there, I'm Hướng MT. 👋</h1>
+<h3>Frontend Developer · React & Flutter Specialist 🚀</h3>
 
 <br/>
 
@@ -114,6 +117,6 @@ const huongMT = {
 
 ![Profile views](https://komarev.com/ghpvc/?username=huongmt0909&color=6366f1&style=flat-square&label=Profile+Views)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1&height=100&section=footer" width="100%" />
+![footer](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
