@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+  }
+
+  .avatar {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f172a;
+    border: 2px solid rgba(99,102,241,0.3);
+    box-shadow:
+      0 0 40px rgba(99,102,241,0.4),
+      0 0 80px rgba(99,102,241,0.2),
+      inset 0 0 60px rgba(99,102,241,0.05);
+  }
+
+  .hex {
+    position: absolute; inset: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(99,102,241,0.2);
+    animation: spin 12s linear infinite;
+  }
+  .hex::before {
+    content: '';
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(139,92,246,0.15);
+  }
+  .hex::after {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(236,72,153,0.1);
+  }
+
+  .dot {
+    position: absolute;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #818cf8;
+    box-shadow: 0 0 10px #818cf8, 0 0 20px #818cf8;
+    top: 12px; left: 50%;
+    transform: translateX(-50%);
+    animation: orbit 3s linear infinite;
+    transform-origin: 0 188px;
+  }
+  .dot2 {
+    position: absolute;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #ec4899;
+    box-shadow: 0 0 8px #ec4899, 0 0 16px #ec4899;
+    top: 12px; left: 50%;
+    transform: translateX(-50%);
+    animation: orbit 5s linear infinite reverse;
+    transform-origin: 0 188px;
+  }
+
+  .initials {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: -6px;
+    position: relative; z-index: 2;
+    background: linear-gradient(135deg, #f8fafc 0%, #c7d2fe 50%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(99,102,241,0.5));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes spin  { to { transform: rotate(360deg); } }
+  @keyframes orbit { to { transform: translateX(-50%) rotate(360deg); } }
+  @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+</style>
+</head>
+<body>
+  <div class="avatar">
+    <div class="hex"></div>
+    <div class="dot"></div>
+    <div class="dot2"></div>
+    <div class="initials">HM</div>
+  </div>
+</body>
+</html>
