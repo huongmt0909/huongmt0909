@@ -58,14 +58,6 @@ const huongMT = {
 
 <img src="divider.svg" width="100%"/>
 
-<img src="banners/trophy.svg" width="100%"/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=huongmt0909&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" />
-</div>
-
-<img src="divider.svg" width="100%"/>
-
 <img src="banners/snake.svg" width="100%"/>
 
 <div align="center">
